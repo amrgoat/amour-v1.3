@@ -1,0 +1,28 @@
+# ── Secrets ───────────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ── Runtime state ─────────────────────────────────────────────────────────────
+# Profile cards and journals are regenerated while the bot runs.
+bot/db/*.db-journal
+bot/data/*.png
+bot/logs/
+*.log
+
+# ── Tooling ───────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+.DS_Store
+
+# Runtime databases (real guild/user data must never be committed)
+bot/db/*.db
+bot/*.db

@@ -1,0 +1,36 @@
+# ── Discord ───────────────────────────────────────────────────────────────────
+# Components V2 (LayoutView, Container, Section, modals with Label) needs 2.6+.
+discord.py>=2.6
+discord-ext-menus
+jishaku
+
+# ── Storage ───────────────────────────────────────────────────────────────────
+aiosqlite
+aiofiles
+
+# ── HTTP / config ─────────────────────────────────────────────────────────────
+aiohttp
+requests
+python-dotenv
+PyYAML
+
+# ── Runtime utilities ─────────────────────────────────────────────────────────
+psutil
+colorama
+pytz
+typing-extensions
+numpy
+
+# ── Images, media & translation ───────────────────────────────────────────────
+pillow
+gTTS
+langdetect
+deep-translator==1.11.4
+
+# ── AI features ───────────────────────────────────────────────────────────────
+openai
+duckduckgo-search==6.3.6
+# Optional extras — both are guarded imports, the related commands disable
+# themselves with a clear message when the package is absent.
+# google-generativeai   # optional Gemini image path
+# prodia                # legacy /imagine SDK; not available on PyPI
